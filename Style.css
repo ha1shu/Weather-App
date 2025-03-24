@@ -1,0 +1,100 @@
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .container {
+      background-color: white;
+      border-radius: 20px;
+      padding: 40px;
+      width: 90%;
+      max-width: 450px;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      animation: slideIn 1s ease;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #3f51b5;
+      font-size: 28px;
+    }
+
+    input {
+      width: 80%;
+      padding: 12px;
+      font-size: 16px;
+      border: 2px solid #ccc;
+      border-radius: 12px;
+      transition: 0.3s;
+      outline: none;
+    }
+
+    input:focus {
+      border-color: #3f51b5;
+      box-shadow: 0 0 10px rgba(63, 81, 181, 0.3);
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 12px 25px;
+      background-color: #3f51b5;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #303f9f;
+      transform: scale(1.05);
+    }
+
+    #weatherResult {
+      margin-top: 25px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    #weatherResult h3 {
+      color: #333;
+    }
+
+    #weatherResult p {
+      margin: 8px 0;
+      font-size: 16px;
+      color: #555;
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(-40px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
